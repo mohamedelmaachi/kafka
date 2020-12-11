@@ -22,9 +22,9 @@ public class KafkaController {
         return;
     }*/
 
-    @GetMapping(value = "/")
-    public String test() {
+    @GetMapping(value = "/{name}")
+    public String test(@PathVariable  String name) {
 
-        return "Hi Mohamed";
+        return "Hi "+name;
     }
 }

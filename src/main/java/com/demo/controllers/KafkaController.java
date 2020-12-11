@@ -25,6 +25,6 @@ public class KafkaController {
     @GetMapping(value = "/{name}")
     public String test(@PathVariable  String name) {
 
-        return "hello "+name;
+        return "hello Mr "+name;
     }
 }
